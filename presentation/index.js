@@ -36,7 +36,10 @@ const images = {
   facebook: require("../assets/facebook.svg"),
   instagram: require("../assets/instagram.png"),
   wordpress: require("../assets/wordpress.png"),
-  netflix: require("../assets/netflix.png")
+  netflix: require("../assets/netflix.png"),
+  props: require('../assets/props.png'),
+  states: require('../assets/states.png'),
+  render: require('../assets/render.png')
 };
 
 preloader(images);
@@ -82,21 +85,34 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading margin="0 auto 2em autto" size={3} textColor="tertiary" caps>Comment ça marche ?</Heading>
-          <List>
-            <Appear>
-              <ListItem>Composants</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Propriétées (props)</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Etats (states)</ListItem>
-            </Appear>
-          </List>
+          <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>Comment ça marche ?</Heading>
+          <Text margin="auto" textColor="primary" size={1}>
+            Composants
+          </Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>Comment ça marche ?</Heading>
+          <Text margin="auto" textColor="primary" size={1}>
+            Propriétés (props)
+            </Text>
+          <Image src={images.props} width="100%" />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>Comment ça marche ?</Heading>
+          <Text margin="auto" textColor="primary" size={1}>
+            Etats (states)
+            </Text>
+          <Image src={images.states} width="50%" />
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>Comment ça marche ?</Heading>
+          <Text margin="auto" textColor="primary" size={1}>
+            La méthode Render
+            </Text>
+          <Image src={images.render} width="100%" />
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading lineHeight={1} margin="0 auto 2em auto" size={3} textColor="secondary" caps>Qui utilise React ?</Heading>
+          <Heading lineHeight={1} margin="0 auto 1em auto" size={3} textColor="secondary" caps>Qui utilise React ?</Heading>
           <Layout>
             <Fill>
               <Image src={images.facebook} width="100%" />
@@ -121,7 +137,7 @@ export default class Presentation extends React.Component {
             <Cite>Formation dev 2017</Cite>
           </BlockQuote>
         </Slide>
-      </Deck>
+      </Deck >
     );
   }
 }
