@@ -39,7 +39,8 @@ const images = {
   netflix: require("../assets/netflix.png"),
   props: require('../assets/props.png'),
   states: require('../assets/states.png'),
-  render: require('../assets/render.png')
+  render: require('../assets/render.png'),
+  components: require('../assets/components.png')
 };
 
 preloader(images);
@@ -71,24 +72,32 @@ export default class Presentation extends React.Component {
           <Heading size={3} textColor="primary" caps>React ? Quésaco ?</Heading>
           <List>
             <Appear>
-              <ListItem>Une librairie pour créer des interfaces utilisateurs</ListItem>
+              <ListItem>Librairie JS interfaces utilisateurs</ListItem>
             </Appear>
             <Appear>
               <ListItem>Le "V" de MVC</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Item 3</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Item 4</ListItem>
+              <ListItem>Facebook -> 2013</ListItem>
             </Appear>
           </List>
+          <Appear>
+            <Heading size={3} textColor="primary" caps>¿ Y Porqué ?</Heading>
+          </Appear>
+          <Appear>
+            <List>
+              <ListItem>Maintenance</ListItem>
+              <ListItem>Réutilisabilité</ListItem>
+              <ListItem>Performances</ListItem>
+            </List>
+          </Appear>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>Comment ça marche ?</Heading>
           <Text margin="auto" textColor="primary" size={1}>
             Composants
           </Text>
+          <Image src={images.components} width="100%" />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>Comment ça marche ?</Heading>
