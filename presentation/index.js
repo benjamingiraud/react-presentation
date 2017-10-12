@@ -120,6 +120,9 @@ export default class Presentation extends React.Component {
             </Text>
           <Image src={images.render} width="100%" />
         </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading margin="0 auto 1em auto" size={6} textColor="tertiary" caps>El famoso Hello World</Heading>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading lineHeight={1} margin="0 auto 1em auto" size={3} textColor="secondary" caps>Qui utilise React ?</Heading>
           <Layout>
@@ -146,7 +149,7 @@ export default class Presentation extends React.Component {
             <Cite>Formation dev 2017</Cite>
           </BlockQuote>
         </Slide>
-      </Deck >
+      </Deck>
     );
   }
 }
